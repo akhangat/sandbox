@@ -1,0 +1,45 @@
+==============================================================================
+ROAD LOAD (stock mass 1500 kg) & EV CAPABILITY (kit mass 1605 kg)
+------------------------------------------------------------------------------
+    20 km/h : road load    175 N  ->    1.0 kW at wheels   | motor rpm   1478
+    30 km/h : road load    191 N  ->    1.6 kW at wheels   | motor rpm   2218
+    40 km/h : road load    214 N  ->    2.4 kW at wheels   | motor rpm   2957
+    50 km/h : road load    244 N  ->    3.4 kW at wheels   | motor rpm   3696
+    60 km/h : road load    280 N  ->    4.7 kW at wheels   | motor rpm   4435
+    80 km/h : road load    372 N  ->    8.3 kW at wheels   | motor rpm   5914
+   100 km/h : road load    490 N  ->   13.6 kW at wheels   | motor rpm   7392
+   120 km/h : road load    634 N  ->   21.1 kW at wheels   | motor rpm   8871
+
+  Rear wheel force at launch       :   1873 N  (571 Nm at axle)
+  EV launch acceleration (flat)     : 1.00 m/s^2
+  EV gradeability (standing start)  : 10.9 %
+  EV 0-40 km/h (full pedal)         : 11.5 s
+  Rear-axle traction limit (mu 0.7) :   4629 N  (static rear load ~42%)
+
+==============================================================================
+OVERTAKING (engine full load, 4th gear)
+------------------------------------------------------------------------------
+  40-80 km/h : stock  17.2 s   kit+boost   9.1 s   (  47% quicker)
+  60-100 km/h : stock  17.3 s   kit+boost  10.6 s   (  39% quicker)
+  60-100 km/h in 5th : stock  27.0 s   kit+boost  13.3 s
+
+==============================================================================
+FUEL ECONOMY  (AC ON, petrol)   CS = charge-sustaining, no plug-in
+------------------------------------------------------------------------------
+  MIDC urban (4x ECE-15)             avg 18.4 km/h | stock   9.9 kmpl | kit CS  12.7 kmpl |  +28% | EV  43% of moving time | starts 8
+  Indian heavy traffic (synthetic)   avg 11.0 km/h | stock   6.9 kmpl | kit CS   9.8 kmpl |  +42% | EV  51% of moving time | starts 19
+  Highway 70-105 km/h (synthetic)    avg 82.1 km/h | stock  16.0 kmpl | kit CS  16.1 kmpl |   +0% | EV   1% of moving time | starts 1
+
+==============================================================================
+PLUG-IN DAY: heavy traffic, start at 95% SoC, run until 15% then CS
+------------------------------------------------------------------------------
+  battery reached 15% SoC after      : 20.9 km (engine-assisted CD driving)
+  distance 32.2 km | stock fuel 4.76 L | kit fuel 2.12 L + 4.39 kWh from battery (plug-in)
+  battery energy use incl. AC        : 136 Wh/km over the run
+
+==============================================================================
+SENSITIVITY
+------------------------------------------------------------------------------
+  Highway using leftover plug-in energy (60->25% SoC): fuel 3.42 -> 2.76 L (19% less) + 2.06 kWh
+  MIDC urban, AC OFF                 stock  12.3 kmpl | kit CS  18.2 kmpl |  +47%
+  Heavy traffic, AC OFF              stock   9.1 kmpl | kit CS  16.1 kmpl |  +77%
